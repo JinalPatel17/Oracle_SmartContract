@@ -6,12 +6,15 @@ from requests import Request, Session
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 from solcx import compile_source, install_solc
 from web3 import Web3
+from eth_account import account
 
 # Update me: set up my Alchemy API endpoint, CoinMarketCap API key, and test account info from Metamask wallet.
-alchemy_url = "https://eth-sepolia.g.alchemy.com/v2/1ySCxBhp6KhxuOt0sfjKhblr9FTf1G9r" #have to change not yet change
+alchemy_url = "https://eth-sepolia.g.alchemy.com/v2/pA5_3wJcVlRl2QTvVgw0xHFrc1n1RcIt"
 CMC_API = "8e87cbfd-9829-4d32-9a85-e5a8e5fad2df"
 my_account = "0xb9d34807003F4B878C61d7D1474229e290333F83"
-private_key = bytes.fromhex("fc38d2f28e190a6dfd1ba9f014d8096b019f431fad619c4331f3121223813676") #have to change not yet change
+#private_key = bytes.fromhex("") #have to change not yet change
+
+# The rest of your script...
 
 # Update me: write a MyOracle contract.
 MyOracleSource = "./contracts/MyOracle.sol"
