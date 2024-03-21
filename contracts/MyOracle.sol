@@ -1,4 +1,4 @@
-// CCMP 606 Assignment 2
+// CCMP 606 Assignment 2 -Jinal Patel
 // MyOracle contract for getting the price of Ether in USD
 
 // SPDX-License-Identifier: MIT

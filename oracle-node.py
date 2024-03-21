@@ -6,15 +6,13 @@ from requests import Request, Session
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 from solcx import compile_source, install_solc
 from web3 import Web3
-from eth_account import account
 
 # Update me: set up my Alchemy API endpoint, CoinMarketCap API key, and test account info from Metamask wallet.
 alchemy_url = "https://eth-sepolia.g.alchemy.com/v2/pA5_3wJcVlRl2QTvVgw0xHFrc1n1RcIt"
 CMC_API = "8e87cbfd-9829-4d32-9a85-e5a8e5fad2df"
 my_account = "0xb9d34807003F4B878C61d7D1474229e290333F83"
-#private_key = bytes.fromhex("") #have to change not yet change
-
-# The rest of your script...
+private_key = bytes.fromhex("380c7fe805be99a5ac3ca3b998eb2b8b30eacc5e37a50545c86e1b1664c87e30")
+contract_id = "0x33b7b10957f5bd2ee05f1144bdd921cbd8b9c982"
 
 # Update me: write a MyOracle contract.
 MyOracleSource = "./contracts/MyOracle.sol"
@@ -126,7 +124,7 @@ def main():
                         continue
                     else:
                         break
-                print("Pulled Current ETH price:", ETH_price)
+                print("Pulled Current ETH price in USD: $", ETH_price)
                 print("Writing to blockchain...")
                 txn = update_oracle(w3, MyOracle, ETH_price)
                 print("Transaction complete!")
