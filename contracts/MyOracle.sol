@@ -1,4 +1,3 @@
-// CCMP 606 Assignment 2 -Jinal Patel
 // MyOracle contract for getting the price of Ether in USD
 
 // SPDX-License-Identifier: MIT
@@ -18,7 +17,7 @@ contract MyOracle {
     }
 
     modifier onlyOwner() {
-        require(msg.sender == owner, "The owner of this Contract call this Function is Mandatory.");
+        require(msg.sender == owner, "The Owner of this Contract call this Function is Mandatory.");
         _;
     }
 
@@ -37,3 +36,4 @@ contract MyOracle {
     }
 }
 
+//Author: Jinal Patel
