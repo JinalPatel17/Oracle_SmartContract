@@ -23,5 +23,8 @@ Methodology:
 > Replace the placeholder for the my_account variable with your actual Ethereum account address.
 > Replace the placeholder for the private_key variable with your actual private key.
 
+
 ## I already uploaded documents in depth regarding this; please check them out first before using this code.
+## Check out GitHub Repo: [JinalPatel/Oracle_SmartContract](https://github.com/JinalPatel17/Oracle_SmartContract)
+## Check out GitHub Profile: [JinalPatel](https://github.com/JinalPatel17)
 ### Thank You.✌️
